@@ -5,7 +5,7 @@ const port = 5010;
 app.use(express.json());
 
 app.get("/health-check", (req, res) => {
-  response.json({
+  res.json({
     message: "Health check success",
   });
 });
